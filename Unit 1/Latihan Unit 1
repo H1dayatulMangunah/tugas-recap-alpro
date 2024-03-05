@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+
+int jarak1, waktu1;
+int kecepatan1, waktu2;
+int jarak2, kecepatan2;
+float v, s, t;
+
+int main(){
+    printf ("Masukan jarak1 dan waktu1:");
+    scanf ("%d %d", &jarak1, &waktu1);
+
+    printf ("Masukan kecepatan1 dan waktu2:");
+    scanf ("%d %d", &kecepatan1, &waktu2);
+
+    printf ("Masukan jarak2 dan kecepatan2:");
+    scanf ("%d %d", &jarak2, &kecepatan2);
+    
+    v = (float) jarak1/waktu1;
+    s = (float) kecepatan1*waktu2;
+    t = (float) jarak2/kecepatan2;
+    
+    printf ("%.2f\n", v);
+    printf ("%.2f\n", s);
+    printf ("%.2f\n", t);
+
+    return 0;
+}
