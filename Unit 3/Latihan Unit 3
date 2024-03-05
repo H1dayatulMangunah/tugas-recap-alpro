@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int jumlah_elemen;
+int i;
+int total = 0;
+
+int main (){
+    printf ("Masukan jumlah elemen:");
+    scanf ("%d", &jumlah_elemen);
+    
+    int arr[jumlah_elemen];
+    
+    printf ("Masukan nilai setiap elemen:\n");
+    for (int i =0; i<jumlah_elemen; i++){
+        scanf ("%d", &arr[i]);
+        total += arr[i];
+    }
+    printf ("Hasil penjumlahan seluruh elemen pada array: %d\n", total);
+    
+    return 0;
+}
